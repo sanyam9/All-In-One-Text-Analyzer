@@ -125,7 +125,7 @@ if rad=="Sentiment Analysis":
 
     if st.button("Predict"):
         if prediction2==0:
-            st.warning("Negetive Text!!")
+            st.warning("Negative Text!!")
         elif prediction2==1:
             st.success("Positive Text!!")
 
