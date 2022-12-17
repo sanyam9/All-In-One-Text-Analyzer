@@ -18,6 +18,27 @@ nltk.download('punkt')
 nltk.download('stopwords')
 sw=nltk.corpus.stopwords.words("english")
 
+st.set_page_config(page_title ="All-In-One Text Analyzer",
+                       page_icon='🔎',
+                       layout='wide')
+
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer:after{
+            content:'© Sanyam Sharma';
+            display:block;
+            position:relative;
+            color:rgba(250, 250, 250, 0.4);
+            padding:5px;
+            top=3px;
+            }
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
+
 rad=st.sidebar.radio("Navigation",["Home","Spam or Ham Detection","Sentiment Analysis","Stress Detection","Hate and Offensive Content Detection","Sarcasm Detection"])
 
 #Home Page
